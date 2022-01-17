@@ -6,3 +6,23 @@ body {
 a {
   color: #00B7FF;
 }
+
+.jumbotron {
+  background-image: url("https://dl.fujifilm-x.com/global/products/lenses/xf10-24mmf4-r-ois-wr/sample-images/xf10-24mmf4-r-ois-wr_sample_03-poiu.jpg?_ga=2.127757069.1466617462.1642426630-1456159625.1642426630");
+  background-size: cover;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
