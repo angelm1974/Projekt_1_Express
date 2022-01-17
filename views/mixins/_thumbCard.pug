@@ -1,0 +1,19 @@
+mixin thumbCard(user)
+    .col-md-4
+        .card.mb-4.shadow-sm
+            svg(width='100%' height='225' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 286 180' preserveaspectratio='none')
+                defs style(type='text/css').#holder_17e67ab9c1d text { fill:rgba(255,255,255,.75);font-weight:normal;font-family:Helvetica, monospace;font-size:14pt }
+                g#holder_17e67ab9c1d
+                    title #{user.name.first} #{user.name.last}
+                    rect(width="100%" height="100%" fill="#55595c")
+                    g
+                    text(x="35%" y="50%" fill="#eceeef" dy=".3em") #{user.name.first} #{user.name.last}
+            .card-body
+                .card-text #{user.location.street.number} #{user.location.street.name}
+                .card-text #{user.location.city} #{user.location.state} #{user.location.postcode}
+                .card-text.mb-4 #{user.location.country}
+                .d-flex.justify-content-between.align-items-center
+                    .btn-group
+                        button.btn.btn-sm.btn-outline-secondary Pokaż
+                        button.btn.btn-sm.btn-outline-secondary Edytuj
+                    small.text-muted #{user.registered.age}
